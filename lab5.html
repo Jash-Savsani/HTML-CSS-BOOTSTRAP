@@ -1,0 +1,185 @@
+<!DOCTYPE html><!--aa program ne yaad rakhvo, aa sacho program lakhel che-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--display flex dvara biju form same ni baju aavi jase-->
+    <style>
+        .Form-Container {
+            display: flex; 
+            justify-content: space-between;
+        }
+
+        .Form {
+            width: 45%;
+        }
+
+        .Form-Group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .Form-Group label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .Form-Group input,
+        .Form-Group select,
+        .Form-Group textarea {
+            width: 200px;
+
+        }
+
+        .Form-Group input[type="radio"] {
+            width: auto;
+        }
+
+        textarea {
+            height: 60px;
+            /*Maintained height for address*/
+            width: 200px;
+            /*Ensures width matches other inputs*/
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .buttons input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Form-Container">
+        <div class="Form">
+            <h2>Student Registration</h2>
+            <form>
+
+                <div class="Form-Group">
+
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                    <div class="Form-Group">
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" id="Email">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Mobile No">Mobile No:</label>
+                        <input type="text" name="Mobile No" id="Mobile No">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Address">Address:</label>
+                        <textarea id="Address" name="Address"></textarea>
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Nationality">Natonality:</label>
+                        <input type="text" name="Nationality" id="Nationality">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Date of Birth">Date of Birth:</label>
+                        <input type="date" name="Date of Birth" id="Date of Birth">
+                    </div>
+                    <div class="Form-Group">
+                        Gender:
+
+                        <input type="radio" name="Gender" id="Male" value="male">
+                        <label for="Male">Male</label>
+
+
+                        <input type="radio" name="Gender" id="Female" value="female">
+                        <label for="Female">Female</label>
+
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Degree">Highest Degree:</label>
+                        <select name="Degree" id="Degree">
+                            <option value="" selected disabled>Select Degree</option>
+                            <!--selected disable no upayog option ne disable banavva mate thay che-->
+                            <option value="Bechlor">Bechior</option>
+                            <option value="Master">Master</option>
+                            <option value="P.hd">P.hd</option>
+                        </select>
+                    </div>
+                    <div class="Form-Group">
+                        <label for="CPI">CPI:</label>
+                        <input type="text" name="CPI" id="CPI">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="University">University:</label>
+                        <input type="text" name="University" id="University">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Passing Year">Passing Year:</label>
+                        <select name="Passing Year" id="Passing Year">
+                            <option value="" selected disabled>Select Your Passing Year</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select><br>
+                    </div>
+                        <div class="buttons">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="cencel">
+                    </div>
+                        <!--Paheli rit ma type reset rakhine value cencel rakhvi.-->
+                        <!--Biji rit ma Cencel mate button tag no upyog pan kari shakay che-->
+            </form>
+        </div>
+        <div class="Form">
+            <h2>COVID 19 Vaccine Registation Form</h2>
+            <form>
+                <div class="Form-Group">
+
+                    <label for="First Name">First Name:</label><!--profesional loko input pachi label lagade che-->
+                    <input type="text" id="First Name" name="First Name">
+                </div>
+                    <div class="Form-Group">
+                        <label for="Last Name">Last Name:</label>
+                        <input type="text" id="Last Name" name="Last Name">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Aadhar Number">Aadhar Number:</label>
+                        <input type="text" id="Aadhar Number" name="Aadhar Number">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Vaccine Name">Vaccine Name:</label>
+                        <select name="Vaccine Name" id="Vaccine Name">
+                            <option value="" selected disabled>Please select Vaccine Name</option>
+                            <option value="ROKO MG">ROKO MG</option>
+                            <option value="COVID SHILD">COVID SHILD</option>
+                            <option value="Paradikamole">Paradikamole</option>
+                        </select>
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Vaccination Center name">Vaccination Center name:</label>
+                        <select name="Vaccination Center Name" id="Vaccination Center" id="Vaccination Center Name">
+                            <option value="" selected disabled>Please Select Vaccination Center Name</option>
+                            <option value="Zanzarada Road">Zanzarda Road</option>
+                            <option value="Sardar Baag">Sardar Baag</option>
+                            <option value="Moti Baag">Moti Baag</option>
+                            <option value="Majevadi Gate">Majevadi Gate</option>
+                        </select>
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Date of Dose">Date of Dose:</label>
+                        <input type="date" Date of Dose id="Date of Dose">
+                    </div>
+                    <div class="Form-Group">
+                        <label for="Dose Number">Dose Number:</label>
+                        <input type="number" name="Dose Number" id="Dose Number">
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="CLICK HERE">
+                        <input type="reset" value="CENCEL">
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
