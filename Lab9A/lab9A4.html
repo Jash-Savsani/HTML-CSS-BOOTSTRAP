@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .move
+        {
+            height: 200px;
+            width: 200px;
+            background-color: grey;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-direction: reverse;
+        }
+        @keyframes move 
+        {
+            0%
+            {
+                top: 0px;
+                left: 0px;
+            }
+            25%
+            {
+                top: 0px;
+                left: 500px;
+            }  
+            50%
+            {
+                top: 500px;
+                left: 500px;
+            }  
+            75%
+            {
+                top: 500px;
+                left: 0px;
+            }
+            100%
+            {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="move"></div>
+</body>
+
+</html>
