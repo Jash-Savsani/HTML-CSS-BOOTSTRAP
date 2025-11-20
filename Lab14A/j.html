@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header
+        {
+            background-color: darkgray;
+        }
+        header nav
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header nav ul
+        {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+        header nav ul li
+        {/*list style type 'li' ni aandar j aapavu*/
+            list-style-type: none;
+            text-decoration: none;
+        }
+        .navigation
+        {
+            text-decoration: none;
+            color: white;
+        }
+        footer
+        {
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        footer button 
+        {
+            margin-bottom: 20px;
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            border: 0px solid orange;
+            height: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer p 
+        {
+            color: white;
+        }
+        .otherpage
+        {/*textdecoration je te elements ne j aapvu*/
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--display:flex justify content:center align-itmes :center textdecorationstyle:none list-style:none-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Thebookseries" class="navigation">The Book series</a></li>
+                <li><a href="#Testimonials" class="navigation">Testimonials</a></li>
+                <li><a href="#The Author" class="navigation">The Author</a></li>
+                <li><a href="#Free resources" class="navigation">Free resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>
+            First Ebook of the book is sabsolutily free.
+        </p>
+        <button><a href="#otherpage" class="otherpage">
+            FIND OUT MORE ABOUT THIS OFFER
+            </a>
+        </button>
+        
+    </footer>
+</body>
+</html>
